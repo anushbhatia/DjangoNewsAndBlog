@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="jumbotron">
+	<h1 class="display-4">Blog</h1>
+	<p class="lead">A Blog Site</p>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View All Articles</a>
+	</p>
+</div>
+<br>
+<div class="jumbotron">
+	<h1 class="display-4">News</h1>
+	<p class="lead">News with Django.</p>
+	<p class="lead">
+		<a class="btn btn-primary btn-lg" href="{% url 'news' %}" role="button">View All News</a>
+	</p>
+</div>
+
+{% endblock content %}
